@@ -59,7 +59,7 @@ Libc functions | Additional functions | Bonus Functions | Personal Functions
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Fill with "len" bytes of "c" the memory of "s"| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
+Fill with "len" bytes of "c" the memory of "s". Пример: ("123456", '1', 2) получим "!!3456" [песочница](https://www.onlinegdb.com/fork/LNHxdgTos)| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
 
 ## [ft_bzero](libft/ft_bzero.c)
 
