@@ -24,34 +24,91 @@ There are 4 sections:
 ### List of functions
 Libc functions | Additional functions | Bonus Functions | Personal Functions
 :----------- | :-----------: | :-----------: | -----------:
-[ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
-[ft_bzero](#ft_bzero)		|[ft_strjoin](#ft_strjoin)  | [ft_lstadd_front](#ft_lstadd_front)| [ft_isupper](#ft_isupper) 
-[ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)  | [ft_lstsize](#ft_lstsize)          | [ft_isspace](#ft_isspace)   
-[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)      | [ft_lstlast](#ft_lstlast)          | [ft_strndup](#ft_strndup)
-[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)       | [ft_lstadd_back](#ft_lstadd_back)  | [ft_strcdup](#ft_strcdup)
-[ft_memchr](#ft_memchr)		|[ft_strmapi](#ft_strmapi)  | [ft_lstdelone](#ft_lstdelone)     | 
-[ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)| [ft_lstclear](#ft_lstclear)    | 
-[ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	| [ft_lstiter](#ft_lstiter)      | 
-[ft_strdup](#ft_strdup)		|[ft_putendl_fd](#ft_putendl_fd)| [ft_lstmap](#ft_lstmap)        | 
-[ft_strcpy](#ft_strcpy)		|[ft_putnbr_fd](#ft_putnbr_fd)	|				| 
-[ft_strlcpy](#ft_strlcpy)	| 	|			| 
-[ft_strcat](#ft_strcat)		| 	| | 
+[ft_isalpha](#ft_isalpha)	|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
+[ft_isdigit](#ft_isdigit)	|[ft_strjoin](#ft_strjoin)  | [ft_lstadd_front](#ft_lstadd_front)| [ft_isupper](#ft_isupper) 
+[ft_isalnum](#ft_isalnum)	|[ft_strtrim](#ft_strjoin)  | [ft_lstsize](#ft_lstsize)          | [ft_isspace](#ft_isspace)   
+[ft_isascii](#ft_isascii)	|[ft_split](#ft_split)      | [ft_lstlast](#ft_lstlast)          | [ft_strndup](#ft_strndup)
+[ft_isprint](#ft_isprint)	|[ft_itoa](#ft_itoa)        | [ft_lstadd_back](#ft_lstadd_back)  | [ft_strcdup](#ft_strcdup)
+[ft_strlen](#ft_strlen)	  |[ft_strmapi](#ft_strmapi)  | [ft_lstdelone](#ft_lstdelone)      | 
+[ft_memset](#ft_memset)	  |[ft_striteri](#ft_striteri)| [ft_lstclear](#ft_lstclear)        | 
+[ft_bzero](#ft_bzero)	    |[ft_putchar_fd](#ft_putchar_fd)	| [ft_lstiter](#ft_lstiter)     | 
+[ft_memcpy](#ft_memcpy)	  |[ft_putstr_fd](#ft_putstr_fd)   | [ft_lstmap](#ft_lstmap)       | 
+[ft_memmove](#ft_memmove)	|[ft_putendl_fd](#ft_putendl_fd)	|				                           | 
+[ft_strlcpy](#ft_strlcpy)	|[ft_putnbr_fd](#ft_putnbr_fd)   |			                            | 
 [ft_strlcat](#ft_strlcat)	| 	| | 
-[ft_strchr](#ft_strchr)		| 	| | 
-[ft_strrchr](#ft_strrchr)	| 	| | 
-[ft_strstr](#ft_strstr)		|   | | 
-[ft_strnstr](#ft_strnstr)	| 	| | 
-[ft_strcmp](#ft_strcmp)		| 	| | 
+[ft_toupper](#ft_toupper) | 	| | 
+[ft_tolower](#ft_tolower)	| 	| | 
+[ft_strchr](#ft_strchr)	  | 	| | 
+[ft_strrchr](#ft_strrchr)	|  | | 
 [ft_strncmp](#ft_strncmp)	| 	| | 
-[ft_atoi](#ft_atoi)         | 	| | 
-[ft_isalpha](#ft_isalpha)	| 	| | 
-[ft_isdigit](#ft_isdigit)	| 	| |
-[ft_isalnum](#ft_isalnum)	|   | | 
-[ft_isascii](#ft_isascii)	|   | | 
-[ft_isprint](#ft_isprint)	|   | | 
-[ft_toupper](#ft_toupper)   |   | | 
-[ft_tolower](#ft_tolower)	|   | | 
-[ft_calloc](#ft_calloc)     |   | |
+[ft_memchr](#ft_memchr)  	| 	| | 
+[ft_memcmp](#ft_memcmp)	  | 	| | 
+[ft_strnstr](#ft_strnstr) | 	| | 
+[ft_atoi](#ft_atoi)	      | 	| | 
+[ft_calloc](#ft_calloc)	  | 	| |
+[ft_strdup](#ft_strdup)	  |  | | 
+
+### Part 1 - Libc functions
+### функции библиотеки ctype.h
+
+## [ft_isalpha](libft/ft_isalpha.c)
+
+`int        ft_isalpha(int c)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Check for a alpabetic character, it is equivalent to ([ft_isupper](#ft_isupper)(c) or [ft_islower](#ft_islower)(c)) | The character to test | 0 if the character tests false and 1 if the character tests true
+
+## [ft_isdigit](libft/ft_isdigit.c)
+
+`int         ft_isdigit(int c)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Check for a digit (0 through 9) | The character to test | 0 if the character tests false and 1 if the character tests true
+
+## [ft_isalnum](libft/ft_isalnum.c)
+
+`int        ft_isalnum(int c)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Check for an alphanumeric character; it is equivalent to ([ft_isalpha](#ft_isalpha) or [ft_isdigit](#ft_isdigit))| The character to test | 0 if the character tests false and 1 if the character tests true
+
+## [ft_isascii](libft/ft_isascii.c)
+
+`int        ft_isascii(int c)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Checks for an ASCII character, which is any character between 0 and octal 0177 inclusive | The character to test | 0 if the character tests false and 1 if the character tests true
+
+## [ft_isprint](libft/ft_isprint.c)
+
+`int        ft_isprint(int c)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Checks for any printable character including space| The character to test | 0 if the character tests false and 1 if the character tests true
+
+## [ft_toupper](libft/ft_toupper.c)
+
+`int        ft_toupper(int c)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+If the character passed as an argument is a lowercase, convert to upper| The character to convert | If c is a lowercase letter, returns its uppercase equivalent. Otherwise,  it  returns  c.
+
+## [ft_tolower](libft/ft_tolower.c)
+
+`int        ft_tolower(int c)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+If the character passed as an argument is an uppercase, convert to lower| The character to convert | If c is a uppercase letter, returns its lowercase equivalent. Otherwise,  it  returns  c.
+
+
+### Функции библиотеки string.h
 
 ## [ft_memset](libft/ft_memset.c)
 
@@ -76,14 +133,6 @@ Description | Param. #1 | Param. #2 | Return Value
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap.  Use [ft_memmove](#ft_memmove) if the memory areas do overlap.| Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
-
- ## [ft_memccpy](libft/ft_memccpy.c)
-
-`void       *ft_memccpy(void *dst, const void *src, int c, size_t n)`
-
-Description | Param. #1 | Param. #2 | Param. #3 | Param. #4 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copies n bytes from memory area  src  to memory  area  dst, stopping when the character c is found, or after n characters are copied, whichever comes first. If copying takes place between objects that overlap, the behavior is undefined.| Memory area dst | Memory area src | A character to search | Number of bytes that memccpy() copied | A pointer to the next character in dst after c, or NULL if c was not found in the first n bytes
 
 ## [ft_memmove](libft/ft_memmove.c)
 
@@ -155,14 +204,6 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Locates the last occurrence of 'c' in the string pointed to by 's'. The terminating null character is considered to be part of the string, therefore if 'c' is '\0', locates the terminating '\0'| Pointer to string | Character to be located | A pointer to the last occurrence of the character c in the string or NULL if the character is not found
 
-## [ft_strcpy](libft/ft_strcpy.c)
-
-`char       *ft_strcpy(char *dst, const char *src)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Copy a string, including the terminating null byte ('\0') | Destination array | String to be copied | A pointer to the destination string dst
-
 ## [ft_strlcpy](libft/ft_strlcpy.c)
 
 `size_t     ft_strlcpy(char *dst, const char *src, size_t dstsize)`
@@ -187,14 +228,6 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Concatenate the string src to the end of dst. It will concatenate at most size - strlen(dst) - 1 bytes, NUL-terminating the result | Destination array | String to be appended to dst | Maximum number of characters to be appended | The initial length of dst plus the length of src
 
-## [ft_strstr](libft/ft_strstr.c)
-
-`char       *ft_strstr(const char *haystack, const char *needle)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Locate substring. Finds the first occurrence of the substring 'needle' in  the  string 'haystack'. The terminating null bytes ('\0') are not compared | String to be scanned | The small string to be searched in haystack string | A pointer to the beginning of the located substring. NULL if the substring is not found. If 'needle' is an empty string, 'haystack' is returned
-
 ## [ft_strnstr](libft/ft_strnstr.c)
 
 `char       *ft_strnstr(const char *haystack, const char *needle, size_t len)`
@@ -211,62 +244,6 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Convert a string to a integer | The string to be converted to int | The converted value
 
-## [ft_isalpha](libft/ft_isalpha.c)
-
-`int        ft_isalpha(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Check for a alpabetic character, it is equivalent to ([ft_isupper](#ft_isupper)(c) or [ft_islower](#ft_islower)(c)) | The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isdigit](libft/ft_isdigit.c)
-
-`int         ft_isdigit(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Check for a digit (0 through 9) | The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isalnum](libft/ft_isalnum.c)
-
-`int        ft_isalnum(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Check for an alphanumeric character; it is equivalent to ([ft_isalpha](#ft_isalpha) or [ft_isdigit](#ft_isdigit))| The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isascii](libft/ft_isascii.c)
-
-`int        ft_isascii(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Checks for an ASCII character, which is any character between 0 and octal 0177 inclusive | The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isprint](libft/ft_isprint.c)
-
-`int        ft_isprint(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Checks for any printable character including space| The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_toupper](libft/ft_toupper.c)
-
-`int        ft_toupper(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-If the character passed as an argument is a lowercase, convert to upper| The character to convert | If c is a lowercase letter, returns its uppercase equivalent. Otherwise,  it  returns  c.
-
-## [ft_tolower](libft/ft_tolower.c)
-
-`int        ft_tolower(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-If the character passed as an argument is an uppercase, convert to lower| The character to convert | If c is a uppercase letter, returns its lowercase equivalent. Otherwise,  it  returns  c.
-
 ## [ft_calloc](libft/ft_calloc.c)
 
 `void       *ft_calloc(size_t count, size_t size)`
@@ -274,6 +251,8 @@ If the character passed as an argument is an uppercase, convert to lower| The ch
 Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
  Allocates enough space for count objects that are size bytes of memory each, and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero | Number of elements to be allocated | Size of elements | A pointer to the allocated memory, or NULL if the request fails
+
+### Part 2 - Additional functions
 
 ## [ft_substr]
 `char   *ft_substr(char const *s, unsigned int start, size_t len)`
@@ -322,14 +301,11 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a string representing the integer received as an argument. Negative numbers must be handled | The integer to convert | The string representing the integer. NULL if the allocation fails.
 
+### Structure list functions
 
 
 
-
-
-
-
-
+### Personal functions
 
 ## [ft_islower](libft/ft_islower.c)
 
@@ -354,16 +330,6 @@ Check for an uppercase character | The character to test | 0 if the character te
 Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
  Checks for white-space characters. These are: space, form-feed ('\f'), newline ('\n'),  carriage  return('\r'), horizontal tab ('\t'), and vertical tab ('\v').| The character to test | 0 if the character tests false and 1 if the character tests true
-
-
-
-
-
-
-
-
-
-
 
 ## ft_capitalize
 
