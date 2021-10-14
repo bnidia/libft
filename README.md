@@ -119,11 +119,11 @@ Calculates the length of the string pointed to by s, excluding the terminating n
 
 ## [ft_memset](libft/ft_memset.c) [doc](https://man.openbsd.org/memset)
 
-`void       *ft_memset(void *s, int c, size_t len)`
+`void       *ft_memset(void *b, int c, size_t len)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Fill with "len" bytes of "c" the memory of "s". Пример: ("123456", '1', 2) получим "!!3456" [песочница](https://www.onlinegdb.com/fork/LNHxdgTos)| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
+Fill with "len" bytes of "b" the memory of "s". Пример: ("123456", '1', 2) получим "!!3456" [песочница](https://www.onlinegdb.com/fork/LNHxdgTos)| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
 
 ## [ft_bzero](libft/ft_bzero.c) [doc](https://man.openbsd.org/bzero)
 
