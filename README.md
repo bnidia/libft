@@ -127,7 +127,7 @@ Fill with "len" bytes of "b" the memory of "s". Пример: ("123456", '1', 2)
 
 ## [ft_bzero](libft/ft_bzero.c) [doc](https://man.openbsd.org/bzero)
 
-`void       *ft_bzero(void *b,  size_t len)`
+`void       ft_bzero(void *b,  size_t len)`
 
 Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
