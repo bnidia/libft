@@ -127,15 +127,15 @@ Fill with "len" bytes of "b" the memory of "s". Пример: ("123456", '1', 2)
 
 ## [ft_bzero](libft/ft_bzero.c) [doc](https://man.openbsd.org/bzero)
 
-`void       *ft_bzero(void *s,  size_t n)`
+`void       *ft_bzero(void *b,  size_t len)`
 
 Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
- Erases the data in the "n" bytes of the memory starting at the location pointed by "s" writing zeroes | The string on which to operate | The number of bytes | None
+ Erases the data in the "len" bytes of the memory starting at the location pointed by "b" writing zeroes | The string on which to operate | The number of bytes | None
 
  ## [ft_memcpy](libft/ft_memcpy.c) [doc](https://man.openbsd.org/memcpy)
 
-`void       *ft_memcpy(void *dst, const void *src, size_t n)`
+`void       *ft_memcpy(void *dst, const void *src, size_t len)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
@@ -159,7 +159,7 @@ Copies up to dstsize - 1 characters from the NUL-terminated string src to dst, N
 
 ## [ft_strlcat](libft/ft_strlcat.c) [doc](https://man.openbsd.org/strlcat)
 
-`size_t     ft_strlcat(char *dst, const char *src, size_t size)`
+`size_t     ft_strlcat(char *dst, const char *src, size_t dstsize)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
@@ -183,31 +183,31 @@ Locates the last occurrence of 'c' in the string pointed to by 's'. The terminat
 
 ## [ft_strncmp](libft/ft_strncmp.c) [doc](https://man.openbsd.org/strncmp)
 
-`char       *ft_strncmp!!!!!!(const char *s, size_t n)`
+`int       ft_strncmp(const char *s1, const char *s2, size_t n)`
 
 Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
-!!!!!!!!!!Allocates a specific amount of memory to copy a string | The string to copy | The maximum amount of characters to copy from the string | A pointer to the new string
+The strcmp() and strncmp() functions lexicographically compare the NUL-terminated strings s1 and s2. The strncmp() function compares at most len characters. | The string to compare | The string to compare | Return an integer greater than, equal to, or less than 0, according to whether the string s1 is greater than, equal to, or less than the string s2. The comparison is done using unsigned characters, so that ‘\200’ is greater than ‘\0’.
 
-## [ft_memchr](libft/ft_memchr.c) [doc](https://man.openbsd.org/mechr)
+## [ft_memchr](libft/ft_memchr.c) [doc](https://man.openbsd.org/memchr)
 
-`void       *ft_memchr(const void *s, int c, size_t n)`
-
-Description | Param. #1 | Param. #2 | Param. #3 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Scans the initial n bytes of s for the first instance of c | Memory area s| A character to search | The number of bytes | A pointer to the matching byte or NULL if the character does not occur in the given memory area
-
-## [ft_strnstr](libft/ft_strnstr.c) [doc](https://man.openbsd.org/strnstr)
-
-`char       *ft_strnstr(const char *haystack, const char *needle, size_t len)`
+`void       *ft_memchr(const void *b, int c, size_t len)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Locate substring, where not more than 'len' characters are searched. Finds the first occurrence of the substring 'needle' in  the  string 'haystack'. The terminating null bytes ('\0') are not compared. | String to be scanned | The small string to be searched in 'haystack' string|The maximum amount of characters to be searched |A pointer to the first character of the first occurrence of little is returned. NULL if the substring is not found. If 'needle' is an empty string, 'haystack' is returned
+Scans the initial len bytes of b for the first instance of c | Memory area b| A character to search | The number of bytes | A pointer to the matching byte or NULL if the character does not occur in the given memory area
+
+## [ft_strnstr](libft/ft_strnstr.c) [doc](https://www.freebsd.org/cgi/man.cgi?query=strnstr)
+
+`char       *ft_strnstr(const char *big, const char *little, size_t len)`
+
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Locate substring, where not more than 'len' characters are searched. Finds the first occurrence of the substring 'little' in  the  string 'big'. The terminating null bytes ('\0') are not compared. | String to be scanned | The small string to be searched in 'big' string | The maximum amount of characters to be searched | A pointer to the first character of the first occurrence of little is returned. NULL if the substring is not found. If 'little' is an empty string, 'big' is returned
 
 ## [ft_atoi](libft/ft_atoi.c) [doc](https://man.openbsd.org/atoi)
 
-`int        ft_atoi(const char *str)`
+`int        ft_atoi(const char *nptr)`
 
 Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
@@ -215,18 +215,18 @@ Convert a string to a integer | The string to be converted to int | The converte
 
 ## [ft_calloc](libft/ft_calloc.c) [doc](https://man.openbsd.org/calloc)
 
-`void       *ft_calloc(size_t count, size_t size)`
+`void       *ft_calloc(size_t nmemb, size_t size)`
 
 Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
- Allocates enough space for count objects that are size bytes of memory each, and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero | Number of elements to be allocated | Size of elements | A pointer to the allocated memory, or NULL if the request fails
+Allocates enough space for count objects that are size bytes of memory each, and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero | Number of elements to be allocated | Size of elements | A pointer to the allocated memory, or NULL if the request fails
 
 ## [ft_strdup](libft/ft_strdup.c) [doc](https://man.openbsd.org/strdup)
 `char       *ft_strdup(const char *s))`
 
 Description | Param. #1 | Return Values
 :-----------: | :-----------: | :-----------:
-Duplicate string s1. Memory  for  the new string is obtained with malloc, and can  be  freed with free | The string to duplicate| A pointer   to  the  duplicated  string.  NULL  if  insufficient  memory  was available
+Duplicate string s. Memory for the new string is obtained with malloc, and can be freed with free | The string to duplicate | A pointer   to the duplicated string. NULL if insufficient memory was available
 
 
 ### Part 2 - Additional functions
