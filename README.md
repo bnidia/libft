@@ -320,115 +320,78 @@ Outputs the integer 'n' to the given file descriptor | The integer to output | T
 
 ### Structure list functions
 ##############################################################################################################
+
 ## [ft_lstnew]
+
 `t_list *ft_lstnew(void *content)`
-Turn in files -
-Parameters #1. The content to create the new element with.
-Return value The new element.
-External functs. malloc
-Description Allocates (with malloc(3)) and returns a new
-element. The variable ’content’ is initialized
-with the value of the parameter ’content’. The
-variable ’next’ is initialized to NULL.
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Allocates (with malloc(3)) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL | The content to create the new element with | Return value The new element
 
 ## [ft_lstadd_front]
+
 `void ft_lstadd_front(t_list **lst, t_list *new)`
-Turn in files -
-Parameters #1. The address of a pointer to the first link of
-a list.
-#2. The address of a pointer to the element to be
-added to the list.
-Return value None
-External functs. None
-Description Adds the element ’new’ at the beginning of the
-list.
+
+Description | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:
+Adds the element ’new’ at the beginning of the list | The address of a pointer to the first link of a list | The address of a pointer to the element to be added to the list | None
 
 ## [ft_lstsize]
+
 `int ft_lstsize(t_list *lst)`
-Turn in files -
-Parameters #1. The beginning of the list.
-Return value Length of the list.
-External functs. None
-Description Counts the number of elements in a list.
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Counts the number of elements in a list | The beginning of the list | Length of the list
 
 ## [ft_lstlast]
-`t_list *ft_lstlast(t_list *lst)`
-Turn in files -
-Parameters #1. The beginning of the list.
-Return value Last element of the list.
-External functs. None
-Description Returns the last element of the list.
 
+`t_list *ft_lstlast(t_list *lst)`
+
+Description | Param. #1 | Return Value
+:-----------: | :-----------: | :-----------:
+Returns the last element of the list | The beginning of the list | Return value Last element of the list
 
 ## [ft_lstadd_back]
+
 `void ft_lstadd_back(t_list **lst, t_list *new)`
-Turn in files -
-Parameters #1. The address of a pointer to the first link of
-a list.
-#2. The address of a pointer to the element to be
-added to the list.
-Return value None
-External functs. None
-Description Adds the element ’new’ at the end of the list.
+
+Description | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:
+Adds the element ’new’ at the end of the list | The address of a pointer to the first link of a list | The address of a pointer to the element to be added to the list | None
 
 ## [ft_lstdelone]
+
 `void ft_lstdelone(t_list *lst, void (*del)(void *))`
-Turn in files -
-Parameters #1. The element to free.
-#2. The address of the function used to delete the
-content.
-Return value None
-External functs. free
-Description Takes as a parameter an element and frees the
-memory of the element’s content using the function
-’del’ given as a parameter and free the element.
-The memory of ’next’ must not be freed.
+
+Description | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:
+Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element. The memory of ’next’ must not be freed | The element to free | The address of the function used to delete the content | None 
 
 ## [ft_lstclear]
-`void ft_lstclear(t_list **lst, void (*del)(void *))`
-Turn in files -
-Parameters #1. The adress of a pointer to an element.
-#2. The adress of the function used to delete the
-content of the element.
-Return value None
-External functs. free
-Description Deletes and frees the given element and every
-successor of that element, using the function ’del’
-and free(3).
-Finally, the pointer to the list must be set to
-NULL.
 
+`void ft_lstclear(t_list **lst, void (*del)(void *))`
+
+Description | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:
+Deletes and frees the given element and every successor of that element, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL | The adress of a pointer to an element | The adress of the function used to delete the content of the element | None
 
 ## [ft_lstiter]
+
 `void ft_lstiter(t_list *lst, void (*f)(void *))`
-Turn in files -
-Parameters #1. The adress of a pointer to an element.
-#2. The adress of the function used to iterate on
-the list.
-Return value None
-External functs. None
-Description Iterates the list ’lst’ and applies the function
-’f’ to the content of each element.
+
+Description | Param. #1 | Param. #2 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:
+Iterates the list ’lst’ and applies the function ’f’ to the content of each element | The adress of a pointer to an element | The adress of the function used to iterate on the list | None  
 
 ## [ft_lstmap]
+
 `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
-Turn in files -
-Parameters #1. The adress of a pointer to an element.
-#2. The adress of the function used to iterate on
-the list.
-#3. The adress of the function used to delete the
-content of an element if needed.
-Return value The new list. NULL if the allocation fails.
-External functs. malloc, free
-Description Iterates the list ’lst’ and applies the function
-’f’ to the content of each element. Creates a new
-list resulting of the successive applications of
-the function ’f’. The ’del’ function is used to
-delete the content of an element if needed.
-14
 
-
-##############################################################################################################
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed | The adress of a pointer to an element | The adress of the function used to iterate on the list | The adress of the function used to delete the content of an element if needed | The new list. NULL if the allocation fails
 
 ### Personal functions
 
@@ -465,5 +428,5 @@ Description | Param. #1 | Return Value
 Capitalizes the first letter of every word in a string	| The string to capitalize		| The new string with capitalized words 
 
 
-[1]: https://www.42madrid.com/ 
+[1]: https://www.21-school.ru/ 
 [2]:
