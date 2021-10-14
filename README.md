@@ -59,7 +59,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Check for a alpabetic character, it is equivalent to ([ft_isupper](#ft_isupper)(c) or [ft_islower](#ft_islower)(c)) | The character to test | 0 if the character tests false and 1 if the character tests true
 
-## [ft_isdigit](libft/ft_isdigit.c) [doc](https://man.openbsd.org/isdigit){:target="\_blank"}
+## [ft_isdigit](libft/ft_isdigit.c) <a href="https://man.openbsd.org/isdigit" target="_blank">doc</a>
 
 `int         ft_isdigit(int c)`
 
