@@ -123,7 +123,7 @@ Calculates the length of the string pointed to by s, excluding the terminating n
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Fill with "len" bytes of "b" the memory of "s". Пример: ("123456", '1', 2) получим "!!3456" [песочница](https://www.onlinegdb.com/fork/LNHxdgTos)| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
+Fill with "len" bytes of "b" the memory of "s". Пример: ("123456", '!', 2) получим "!!3456" [песочница](https://www.onlinegdb.com/fork/LNHxdgTos)| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
 
 ## [ft_bzero](libft/ft_bzero.c) [doc](https://man.openbsd.org/bzero)
 
@@ -139,7 +139,7 @@ Description | Param. #1 | Param. #2 | Return Value
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap.  Use [ft_memmove](#ft_memmove) if the memory areas do overlap.| Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
+Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap.  Use [ft_memmove](#ft_memmove) if the memory areas do overlap. Подробное объяснение https://youtu.be/nFl1cNXk85s | Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
 
 ## [ft_memmove](libft/ft_memmove.c) [doc](https://man.openbsd.org/memmove)
 
