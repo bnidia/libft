@@ -51,7 +51,8 @@ Libc functions | Additional functions | Bonus Functions | Personal Functions
 ### Part 1 - Libc functions
 ### функции библиотеки ctype.h
 
-## [ft_isalpha](libft/ft_isalpha.c) [doc](https://man.openbsd.org/isalpha)
+## [ft_isalpha](libft/ft_isalpha.c)
+[doc](https://man.openbsd.org/isalpha)
 
 `int        ft_isalpha(int c)`
 
