@@ -1,5 +1,5 @@
 # Libft - Russian edition, 21-school
-<img src="https://github.com/rustem-spb/libft/blob/master/Libft.JPG" />
+<img src="https://github.com/rustem-spb/libft/Libft.JPG" />
 
 ![Text](https://snipboard.io/DuJ8ON.jpg)
 
@@ -24,7 +24,7 @@ There are 4 sections:
 ### List of functions
 Libc functions | Additional functions | Bonus Functions | Personal Functions
 :----------- | :-----------: | :-----------: | -----------:
-[ft_isalpha](##ft_isalpha)	|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
+[ft_isalpha](#ft_isalpha)	|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
 [ft_isdigit](#ft_isdigit)	|[ft_strjoin](#ft_strjoin)  | [ft_lstadd_front](#ft_lstadd_front)| [ft_isupper](#ft_isupper) 
 [ft_isalnum](#ft_isalnum)	|[ft_strtrim](#ft_strjoin)  | [ft_lstsize](#ft_lstsize)          | [ft_isspace](#ft_isspace)   
 [ft_isascii](#ft_isascii)	|[ft_split](#ft_split)      | [ft_lstlast](#ft_lstlast)          | [ft_strndup](#ft_strndup)
@@ -51,7 +51,7 @@ Libc functions | Additional functions | Bonus Functions | Personal Functions
 ### Part 1 - Libc functions
 ### функции библиотеки ctype.h
 
-## [ft_isalpha](libft/ft_isalpha.c)
+## [ft_isalpha](ft_isalpha.c)
 [doc](https://man.openbsd.org/isalpha)
 
 `int        ft_isalpha(int c)`
