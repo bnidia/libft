@@ -51,7 +51,7 @@ Libc functions | Additional functions | Bonus Functions | Personal Functions
 ### Part 1 - Libc functions
 ### функции библиотеки ctype.h
 
-## [ft_isalpha](ft_isalpha.c)
+## [ft_isalpha](libft/ft_isalpha.c)
 [doc](https://man.openbsd.org/isalpha)
 
 `int        ft_isalpha(int c)`
@@ -60,7 +60,8 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Check for a alpabetic character, it is equivalent to ([ft_isupper](#ft_isupper)(c) or [ft_islower](#ft_islower)(c)) | The character to test | 0 if the character tests false and 1 if the character tests true
 
-## [ft_isdigit](libft/ft_isdigit.c) [doc](https://man.openbsd.org/isdigit)
+## [ft_isdigit](libft/ft_isdigit.c)
+[doc](https://man.openbsd.org/isdigit)
 
 `int         ft_isdigit(int c)`
 
@@ -68,7 +69,8 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Check for a digit (0 through 9) | The character to test | 0 if the character tests false and 1 if the character tests true
 
-## [ft_isalnum](libft/ft_isalnum.c) [doc](https://man.openbsd.org/isalnum)
+## [ft_isalnum](libft/ft_isalnum.c)
+[doc](https://man.openbsd.org/isalnum)
 
 `int        ft_isalnum(int c)`
 
@@ -76,7 +78,8 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Check for an alphanumeric character; it is equivalent to ([ft_isalpha](#ft_isalpha) or [ft_isdigit](#ft_isdigit))| The character to test | 0 if the character tests false and 1 if the character tests true
 
-## [ft_isascii](libft/ft_isascii.c) [doc](https://man.openbsd.org/isascii)
+## [ft_isascii](libft/ft_isascii.c)
+[doc](https://man.openbsd.org/isascii)
 
 `int        ft_isascii(int c)`
 
@@ -84,7 +87,8 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Checks for an ASCII character, which is any character between 0 and octal 0177 inclusive | The character to test | 0 if the character tests false and 1 if the character tests true
 
-## [ft_isprint](libft/ft_isprint.c) [doc](https://man.openbsd.org/isprint)
+## [ft_isprint](libft/ft_isprint.c)
+[doc](https://man.openbsd.org/isprint)
 
 `int        ft_isprint(int c)`
 
@@ -92,7 +96,8 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Checks for any printable character including space| The character to test | 0 if the character tests false and 1 if the character tests true
 
-## [ft_toupper](libft/ft_toupper.c) [doc](https://man.openbsd.org/toupper)
+## [ft_toupper](libft/ft_toupper.c)
+[doc](https://man.openbsd.org/toupper)
 
 `int        ft_toupper(int c)`
 
@@ -100,7 +105,8 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 If the character passed as an argument is a lowercase, convert to upper| The character to convert | If c is a lowercase letter, returns its uppercase equivalent. Otherwise,  it  returns  c.
 
-## [ft_tolower](libft/ft_tolower.c) [doc](https://man.openbsd.org/tolower)
+## [ft_tolower](libft/ft_tolower.c)
+[doc](https://man.openbsd.org/tolower)
 
 `int        ft_tolower(int c)`
 
