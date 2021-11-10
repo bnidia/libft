@@ -1,5 +1,5 @@
 # Libft - Russian edition, 21-school
-<img src="https://github.com/rustem-spb/libft/Libft.JPG" />
+<img src="https://github.com/rustem-spb/libft/Screenshot from 2021-11-03 20-40-52.png" />
 
 ![Text](https://snipboard.io/DuJ8ON.jpg)
 
