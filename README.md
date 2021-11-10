@@ -264,14 +264,14 @@ Duplicate string s. Memory for the new string is obtained with malloc, and can b
 
 ### Part 2 - Additional functions
 
-## [ft_substr](ft_substr)
+## [ft_substr](ft_substr.c)
 `char   *ft_substr(char const *s, unsigned int start, size_t len)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc(3)) and returns a substring from the string 's'. The substring begins at index 'start' and is of maximum size 'len'| The string from which create the substring | The start index of the substring in the string | The maximum length of the substring | The substring. NULL if the allocation fails
 
-## [ft_strjoin](ft_strjoin)
+## [ft_strjoin](ft_strjoin.c)
 
 `char *ft_strjoin(char const *s1, char const *s2)`
 
@@ -279,7 +279,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a new string, which is the result of the concatenation of 's1' and 's2' |The prefix string | The suffix string | The new string. NULL if the allocation fails
 
-## [ft_strtrim](ft_strtrim)
+## [ft_strtrim](ft_strtrim.c)
 
 `char *ft_strtrim(char const *s1, char const *set)`
 
@@ -287,7 +287,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a copy of 's1' with the characters specified in 'set' removed from the beginning and the end of the string | The string to be trimmed |The reference set of character to trim | The trimmed string. NULL if the allocation fails
 
-## [ft_split](ft_split)
+## [ft_split](ft_split.c)
 
 `char **ft_split(char const *s, char c)`
 
@@ -295,7 +295,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. The array must be ended by a NULL pointer. | The string to be split | The delimiter character | The array of new strings resulting of the split. NULL if the allocation fails
 
-## [ft_itoa](ft_itoa)
+## [ft_itoa](ft_itoa.c)
 
 `char *ft_itoa(int n)`
 
@@ -303,7 +303,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Allocates (with malloc(3)) and returns a string representing the integer received as an argument. Negative numbers must be handled. | Integer to convert | The string representing the integer. NULL if the allocation fails.
 
-## [ft_strmapi](ft_strmapi)
+## [ft_strmapi](ft_strmapi.c)
 
 `char *ft_strmapi(char const *s, char (*f)(unsigned int, char))`
 
@@ -311,7 +311,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Applies the function ’f’ to each character of the string ’s’ to create a new string (with malloc(3)) resulting from successive applications of ’f’. | The string on which to iterate | The function to apply to each character. | The string created from the successive applications of ’f’. Returns NULL if the allocation fails.
 
-## [ft_striteri](ft_striteri)
+## [ft_striteri](ft_striteri.c)
 
 `void ft_striteri(char *s, void (*f)(unsigned int, char*))`
 
@@ -319,7 +319,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Applies the function f to each character of the string passed as argument, and passing its index as first argument. Each character is passed by address to f to be modified if necessary | The string on which to iterate | The function to apply to each character | None
 
-## [ft_putchar_fd](ft_putchar_fd)
+## [ft_putchar_fd](ft_putchar_fd.c)
 
 `void ft_putchar_fd(char c, int fd)`
 
@@ -327,7 +327,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Outputs the character 'c' to the given file descriptor | The character to output | The file descriptor on which to write | None
 
-## [ft_putstr_fd](ft_putstr_fd)
+## [ft_putstr_fd](ft_putstr_fd.c)
 
 `void ft_putstr_fd(char *s, int fd)`
 
@@ -335,7 +335,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Outputs the string 's' to the given file descriptor | The string to output | The file descriptor on which to write | None
 
-## [ft_putendl_fd](ft_putendl_fd)
+## [ft_putendl_fd](ft_putendl_fd.c)
 
 `char **ft_putendl_fd(char *s, int fd)`
 
@@ -343,7 +343,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Outputs the string 's' to the given file descritor, followed by a newline | The string to output | The file descriptor on which to write | None
 
-## [ft_putnbr_fd](ft_putnbr_fd)
+## [ft_putnbr_fd](ft_putnbr_fd.c)
 
 `void   ft_putnbr_fd(int n, int fd)`
 
@@ -354,7 +354,7 @@ Outputs the integer 'n' to the given file descriptor | The integer to output | T
 ### Structure list functions
 ##############################################################################################################
 
-## [ft_lstnew](ft_lstnew)
+## [ft_lstnew](ft_lstnew.c)
 
 `t_list *ft_lstnew(void *content)`
 
@@ -362,7 +362,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Allocates (with malloc(3)) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL | The content to create the new element with | Return value The new element
 
-## [ft_lstadd_front](ft_lstadd_front)
+## [ft_lstadd_front](ft_lstadd_front.c)
 
 `void ft_lstadd_front(t_list **lst, t_list *new)`
 
@@ -370,7 +370,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Adds the element ’new’ at the beginning of the list | The address of a pointer to the first link of a list | The address of a pointer to the element to be added to the list | None
 
-## [ft_lstsize](ft_lstsize)
+## [ft_lstsize](ft_lstsize.c)
 
 `int ft_lstsize(t_list *lst)`
 
@@ -378,7 +378,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Counts the number of elements in a list | The beginning of the list | Length of the list
 
-## [ft_lstlast](ft_lstlast)
+## [ft_lstlast](ft_lstlast.c)
 
 `t_list *ft_lstlast(t_list *lst)`
 
@@ -386,7 +386,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Returns the last element of the list | The beginning of the list | Return value Last element of the list
 
-## [ft_lstadd_back](ft_lstadd_back)
+## [ft_lstadd_back](ft_lstadd_back.c)
 
 `void ft_lstadd_back(t_list **lst, t_list *new)`
 
@@ -394,7 +394,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Adds the element ’new’ at the end of the list | The address of a pointer to the first link of a list | The address of a pointer to the element to be added to the list | None
 
-## [ft_lstdelone](ft_lstdelone)
+## [ft_lstdelone](ft_lstdelone.c)
 
 `void ft_lstdelone(t_list *lst, void (*del)(void *))`
 
@@ -402,7 +402,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element. The memory of ’next’ must not be freed | The element to free | The address of the function used to delete the content | None 
 
-## [ft_lstclear](ft_lstclear)
+## [ft_lstclear](ft_lstclear.c)
 
 `void ft_lstclear(t_list **lst, void (*del)(void *))`
 
@@ -410,7 +410,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Deletes and frees the given element and every successor of that element, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL | The adress of a pointer to an element | The adress of the function used to delete the content of the element | None
 
-## [ft_lstiter](ft_lstiter)
+## [ft_lstiter](ft_lstiter.c)
 
 `void ft_lstiter(t_list *lst, void (*f)(void *))`
 
@@ -418,7 +418,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Iterates the list ’lst’ and applies the function ’f’ to the content of each element | The adress of a pointer to an element | The adress of the function used to iterate on the list | None  
 
-## [ft_lstmap](ft_lstmap)
+## [ft_lstmap](ft_lstmap.c)
 
 `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
 
