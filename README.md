@@ -1,7 +1,7 @@
 # Libft - Russian edition, 21-school
 <img src="https://github.com/rustem-spb/libft/blob/main/Screenshot%20from%202021-11-03%2020-40-52.png" />
 
-![Text](https://snipboard.io/DuJ8ON.jpg)
+![Text](https://github.com/rustem-spb/libft/blob/main/Screenshot%20from%202021-11-10%2022-57-36.png)
 
 ### TOC
 * [Что такое проект libft?](#Что-такое-проект-libft)
