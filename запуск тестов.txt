@@ -1,0 +1,26 @@
+находясь в либе libft запустить скрипт
+
+===== Libftest =======================================
+bash ../Libftest/grademe.sh
+
+===== libftTester ====================================
+bash ../libftTester/test.sh
+
+установка
+сделать файл:
+~/libftTester/test.sh
+#!/bin/bash
+
+cd ~/libftTester
+make a
+cd ~/libft
+
+===== libft-war-machine ==============================
+bash ../libft-war-machine/grademe.sh
+
+установка
+git clone https://github.com/ska42/libft-war-machine
+исправить путь в my_config.sh
+7 тест ft_strlcat не корректный, т.к. подает не нультерминированную строку
+
+

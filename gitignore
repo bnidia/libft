@@ -1,0 +1,10 @@
+/.vscode/
+/.idea/
+.gitignore
+*.pdf
+a.out
+main.c
+*.o
+*.d
+*.a
+*.txt
