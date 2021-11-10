@@ -354,7 +354,7 @@ Outputs the integer 'n' to the given file descriptor | The integer to output | T
 ### Structure list functions
 ##############################################################################################################
 
-## [ft_lstnew](ft_lstnew.c)
+## [ft_lstnew](ft_lstnew_bonus.c)
 
 `t_list *ft_lstnew(void *content)`
 
@@ -362,7 +362,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Allocates (with malloc(3)) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL | The content to create the new element with | Return value The new element
 
-## [ft_lstadd_front](ft_lstadd_front.c)
+## [ft_lstadd_front](ft_lstadd_front_bonus.c)
 
 `void ft_lstadd_front(t_list **lst, t_list *new)`
 
@@ -370,7 +370,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Adds the element ’new’ at the beginning of the list | The address of a pointer to the first link of a list | The address of a pointer to the element to be added to the list | None
 
-## [ft_lstsize](ft_lstsize.c)
+## [ft_lstsize](ft_lstsize_bonus.c)
 
 `int ft_lstsize(t_list *lst)`
 
@@ -378,7 +378,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Counts the number of elements in a list | The beginning of the list | Length of the list
 
-## [ft_lstlast](ft_lstlast.c)
+## [ft_lstlast](ft_lstlast_bonus.c)
 
 `t_list *ft_lstlast(t_list *lst)`
 
@@ -386,7 +386,7 @@ Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Returns the last element of the list | The beginning of the list | Return value Last element of the list
 
-## [ft_lstadd_back](ft_lstadd_back.c)
+## [ft_lstadd_back](ft_lstadd_back_bonus.c)
 
 `void ft_lstadd_back(t_list **lst, t_list *new)`
 
@@ -394,7 +394,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Adds the element ’new’ at the end of the list | The address of a pointer to the first link of a list | The address of a pointer to the element to be added to the list | None
 
-## [ft_lstdelone](ft_lstdelone.c)
+## [ft_lstdelone](ft_lstdelone_bonus.c)
 
 `void ft_lstdelone(t_list *lst, void (*del)(void *))`
 
@@ -402,7 +402,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element. The memory of ’next’ must not be freed | The element to free | The address of the function used to delete the content | None 
 
-## [ft_lstclear](ft_lstclear.c)
+## [ft_lstclear](ft_lstclear_bonus.c)
 
 `void ft_lstclear(t_list **lst, void (*del)(void *))`
 
@@ -410,7 +410,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Deletes and frees the given element and every successor of that element, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL | The adress of a pointer to an element | The adress of the function used to delete the content of the element | None
 
-## [ft_lstiter](ft_lstiter.c)
+## [ft_lstiter](ft_lstiter_bonus.c)
 
 `void ft_lstiter(t_list *lst, void (*f)(void *))`
 
@@ -418,7 +418,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Iterates the list ’lst’ and applies the function ’f’ to the content of each element | The adress of a pointer to an element | The adress of the function used to iterate on the list | None  
 
-## [ft_lstmap](ft_lstmap.c)
+## [ft_lstmap](ft_lstmap_bonus.c)
 
 `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
 
