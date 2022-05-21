@@ -1,20 +1,21 @@
-# Libft - Russian edition, 21-school
-<img src="https://github.com/rustem-spb/libft/blob/main/Screenshot%20from%202021-11-03%2020-40-52.png" />
+# Libft (Complexity 70 hours)
+<img align="right" src="https://badge42.vercel.app/api/v2/cl3enoo9k004009muhk5a94tj/project/2364392" alt="bnidia's 42 Libft Score" />
+<img src="https://github.com/bnidia/libft/blob/main/Screenshot%20from%202021-11-03%2020-40-52.png" />
 
-![Text](https://github.com/rustem-spb/libft/blob/main/Screenshot%20from%202021-11-10%2022-57-36.png)
+![Text](https://github.com/bnidia/libft/blob/main/Screenshot%20from%202021-11-10%2022-57-36.png)
 
-### TOC
-* [Что такое проект libft?](#Что-такое-проект-libft)
-* [What's in it?](#whats-in-it)
-* [List of functions](#list-of-functions)  Click to each function to see an explication
+### Contents
+* [What is the project libft?](#What-is-the-project-libft)
+* [What in it?](#whats-in-it)
+* [List of functions](#list-of-functions)
 
-### Что такое проект libft?
+### What is the project libft?
 
-Библиотека libft это первый индивидуальный провект в школе 21, в котором мы должны пересоздать некоторые функции из стандартной библиотеки С. В дальнейшем мы сможем использовать libft в наших других проектах. Это полезное упражнение позволяет продолжить изучение простых алгоритмов и структур языка С. Как вы помните в школе строгие правила, которые не разрешают нам пользоваться многими библиотечными функциями, заставляя нас писать собственные функции.
+The libft library is the first individual project in school 21, in which we have to recreate some functions from the standard C library. In the future we will be able to use libft in our other projects. This useful exercise allows you to continue studying simple algorithms and structures of the C language. As you remember, there are strict rules in school that do not allow us to use many library functions, forcing us to write our own functions.
 
-### What's in it?
+### What in it?
 
-There are 4 sections:
+4 sections of functions:
 
 1.  **Libc Functions:** Some of the standard C functions
 2.  **Additional functions:** Functions that will be useful for later projects
