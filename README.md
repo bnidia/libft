@@ -455,3 +455,14 @@ Description | Param. #1 | Return Value
 
 
 [1]: https://www.21-school.ru/ 
+
+Name
+Description
+Installation
+Usage
+FAQ
+Support
+Contributing
+Contact information
+License
+Acknowledgment
